@@ -7,20 +7,21 @@ metadata:
 spec:
   description: {{ .description | quote }}
   sourceRepos:
-    {{- range .sourceRepos }}
-    - {{ . }}
-    {{- end }}
+{{- range .sourceRepos }}
+    - {{ . | quote }}
+{{- end }}
   destinations:
-    {{- range .destinations }}
+{{- range .destinations }}
     - server: {{ .server | quote }}
       namespace: {{ .namespace | quote }}
-    {{- end }}
-  {{- if .clusterResourceWhitelist }}
+{{- end }}
+{{- if .clusterResourceWhitelist }}
   clusterResourceWhitelist:
-    {{- range .clusterResourceWhitelist }}
+{{- range .clusterResourceWhitelist }}
     - group: {{ .group | quote }}
       kind: {{ .kind | quote }}
-    {{- end }}
-  {{- end }}
+{{- end }}
+{{- end }}
 ---
 {{- end }}
+

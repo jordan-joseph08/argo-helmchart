@@ -3,11 +3,11 @@ entries:
   argocd-bundle:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-08T20:20:02.465143-04:00"
+    created: "2025-06-09T06:19:46.929501-04:00"
     description: A Helm chart for managing ArgoCD Projects and Applications
-    digest: 0f696d4d8e4dafc939377b67a89f0072bf486b2e1172991a79866511fec960a0
+    digest: 995e514cbec17e600d7e5b45f89387d498aed1d444474138dd5677a8f9eeea5c
     name: argocd-bundle
     urls:
     - https://github.com/jordan-joseph08/argo-helmchart.git/argocd-bundle-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-08T20:20:02.463199-04:00"
+generated: "2025-06-09T06:19:46.927547-04:00"
